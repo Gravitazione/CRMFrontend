@@ -23,7 +23,6 @@ module.exports = {
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
-    camelcase: 'error',
     'spaced-comment': 'error',
     quotes: ['error', 'single'],
     'no-duplicate-imports': 'error',
