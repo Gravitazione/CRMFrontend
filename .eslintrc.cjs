@@ -12,7 +12,15 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+  plugins: [
+    'airbnb',
+    'airbnb/hooks',
+    'airbnb-typescript',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+  ],
   rules: {
     'react/react-in-jsx-scope': 'off',
     camelcase: 'error',
