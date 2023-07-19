@@ -24,6 +24,7 @@ module.exports = {
           black: '#000000',
           success: '#04B35F',
           red: '#B30404',
+          disable: '#D2D7DD'
         },
       },
     ],
