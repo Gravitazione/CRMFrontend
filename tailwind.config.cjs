@@ -3,7 +3,29 @@ module.exports = {
   mode: 'jit',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        normal: 'PromptRegular',
+        light: 'PromptLight',
+        bold: 'PromptBold',
+      },
+    },
   },
-  plugins: [require("daisyui")],
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: '#045AB3',
+          secondary: '#000C18',
+          lightGray: '#F5FAFF',
+          white: '#FFFFFF',
+          gray: '#8190A0',
+          black: '#000000',
+          success: '#04B35F',
+          red: '#B30404',
+        },
+      },
+    ],
+  },
 };
