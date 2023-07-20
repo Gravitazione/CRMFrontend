@@ -4,6 +4,7 @@ import PreviewPage from './preview';
 import DatamanagementPage from './data-management';
 import BannerPage from './banner';
 import ArticlePage from './article';
+import LoginPage from './login';
 
 export const router = createBrowserRouter([
   ...HomePage,
@@ -11,4 +12,5 @@ export const router = createBrowserRouter([
   ...DatamanagementPage,
   ...BannerPage,
   ...ArticlePage,
+  ...LoginPage
 ]);
