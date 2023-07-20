@@ -4,6 +4,8 @@ import { bannerActive, dataActive, articleActive } from "../../stores/accordion"
 import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs'
 import BannerIcon from '../../assets/icons/material-symbols_full-coverage-rounded.svg'
 import { GoDotFill } from 'react-icons/go'
+import { HiChartPie } from 'react-icons/hi'
+import ArticleIcons from '../../assets/icons/clarity_note-solid.svg'
 
 const Accordion = () => {
     const [activeBanner, setActiveBanner] = useAtom(bannerActive);
@@ -13,14 +15,14 @@ const Accordion = () => {
     const { pathname } = useLocation();
 
     return (
-        <div>
+        <div className="">
             <div className="min-w-[272px]">
                 <div
                     className="flex flex-row justify-between items-center text-black text-lg font-normal p-4"
                     onClick={() => setActiveData(!activeData)}
                 >
                     <div className="flex flex-row items-center space-x-2">
-                        <img src={BannerIcon} alt="banner icon" />
+                        <HiChartPie />
                         <p>Data Management</p>
                     </div>
                     {activeData ?
@@ -96,7 +98,7 @@ const Accordion = () => {
                     onClick={() => setActiveArticle(!activeArticle)}
                 >
                     <div className="flex flex-row items-center space-x-2">
-                        <img src={BannerIcon} alt="banner icon" />
+                        <img src={ArticleIcons} alt="banner icon" />
                         <p>Article</p>
                     </div>
                     {activeArticle ?
