@@ -2,7 +2,7 @@ import Home from '../../pages/home/Home';
 
 const HomePage = [
   {
-    path: '/main',
+    path: '/',
     element: <Home />,
   },
 ];
