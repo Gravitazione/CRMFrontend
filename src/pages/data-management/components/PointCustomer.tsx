@@ -1,6 +1,15 @@
 import React from 'react';
 
-const PointCustomer = () => {
+interface PointCustomerProps {
+  pointCustomer: {
+    useScore: number;
+    totalScore: number;
+    allScore: number;
+  }
+}
+
+const PointCustomer: React.FC<PointCustomerProps> = ({ pointCustomer }) => {
+  const { allScore, useScore, totalScore } = pointCustomer;
   return <div className="bg-lightGray shadow-lg w-[1063px] h-[200px]">
         <div className=" flex flex-row p-10 items-start justify-start gap-[10px]">
               <div className="flex flex-col items-center justify-start gap-[20px]">
@@ -8,7 +17,7 @@ const PointCustomer = () => {
                   จำนวนคะแนนทั้งหมด
                 </div>
                 <div className="flex flex-col items-center justify-start gap-[10px] text-5xl">
-                  <b className="relative">16,000,000</b>
+                  <b className="relative">{allScore}</b>
                   <div className="relative text-lg font-light">คะแนน</div>
                 </div>
               </div>
@@ -22,7 +31,7 @@ const PointCustomer = () => {
                   คะแนนที่ใช้ไป
                 </div>
                 <div className="flex flex-col items-center justify-start gap-[10px] text-5xl">
-                  <b className="relative">10,000,000</b>
+                  <b className="relative">{useScore}</b>
                   <div className="relative text-lg font-light">คะแนน</div>
                 </div>
               </div>
@@ -36,7 +45,7 @@ const PointCustomer = () => {
                   คะแนนคงเหลือ
                 </div>
                 <div className="flex flex-col items-center justify-start gap-[10px] text-5xl">
-                  <b className="relative">6,000,000</b>
+                  <b className="relative">{totalScore}</b>
                   <div className="relative text-lg font-light">คะแนน</div>
                 </div>
               </div>
