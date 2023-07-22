@@ -71,4 +71,3 @@ const TotalReward = ({ data }: { data: number[] }) => {
 };
 
 export default TotalReward;
-

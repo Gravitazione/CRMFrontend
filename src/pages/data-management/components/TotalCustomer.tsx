@@ -71,4 +71,3 @@ const TotalCustomer = ({ data }: { data: number[] }) => {
 };
 
 export default TotalCustomer;
-

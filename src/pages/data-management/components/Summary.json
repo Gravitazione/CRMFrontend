@@ -1,0 +1,28 @@
+{
+    "TotalCustomerData": [8, 2],
+    "maximumPointCustomer": [
+      {"name": "User 1", "img": "", "score": 100},
+      {"name": "User 2", "img": "", "score": 90},
+      {"name": "User 3", "img": "", "score": 110}
+    ],
+    "pointCustomer": {"allScore": 16000000, "useScore": 10000000, "totalScore": 6000000},
+    "genderCustomer": {"women": 30, "Men": 20, "unknown_gender": 50},
+    "reward": [
+      {
+        "reward": "Lorem ipsum",
+        "TypeReward": "Reward/Privilege",
+        "img": "",
+        "group": "Lorem",
+        "TotalCustomer": 100,
+        "sum_Reward": 100
+      }
+    ],
+    "totalPointCustomer": {"total_Collectpoints": 30, "number_of_timesPoints": 20},
+    "provinceCustomer": [
+      {"name": "User 1", "score": 100},
+      {"name": "User 1", "score": 100},
+      {"name": "User 1", "score": 100},
+      {"name": "User 1", "score": 100},
+      {"name": "User 1", "score": 100}
+    ]
+  }
