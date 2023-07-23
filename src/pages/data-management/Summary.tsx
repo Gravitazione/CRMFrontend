@@ -13,7 +13,7 @@ import summary_data from './components/Summary.json';
 const Summary = () => {
   return (
     <MainLayout>
-      <div className="w-full pl-4">
+      <div className="w-full pl-4 bg-lightGray">
         <div className=" items-start justify-start gap-4 text-center grid grid-rows-2 grid-flow-col pt-2">
           <div className="row-span-3">
             <TotalCustomer data={summary_data.TotalCustomerData} />

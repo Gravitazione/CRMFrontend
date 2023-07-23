@@ -15,7 +15,7 @@ interface GenderCustomerProps {
 const GenderCustomer: React.FC<GenderCustomerProps> = ({ genderCustomer }) => {
   const { women, Men, unknown_gender } = genderCustomer;
   return (
-    <div className="bg-lightGray shadow-lg w-[522px] h-[423px]">
+    <div className="bg-white shadow-lg w-[522px] h-[423px] rounded-xl">
       <div className=" flex flex-col p-10 items-center justify-start gap-[20px]">
         <div className="w-[440px] flex flex-row items-start justify-start">
           <div className="relative font-light inline-block w-[440px] shrink-0 text-black">จำนวนลูกค้าทั้งหมด</div>

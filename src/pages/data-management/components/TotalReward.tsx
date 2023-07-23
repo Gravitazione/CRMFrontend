@@ -20,12 +20,12 @@ const TotalReward = ({ data }: { data: number[] }) => {
     ],
   };
   return (
-    <div className="bg-lightGray shadow-lg w-[522px] h-[423px]">
+    <div className="bg-white shadow-lg w-[522px] h-[423px] rounded-xl">
       <div className="rounded-3xs   flex flex-col p-11 items-center justify-start ">
         <div className="flex flex-row items-start justify-start text-left">
           <div className="relative font-light inline-block w-[350px] shrink-0 text-black">จำนวนลูกค้าทั้งหมด</div>
         </div>
-        <div className='mt-4' style={{ position: 'relative', width: '45%', height: '45%' }}>
+        <div className="mt-4" style={{ position: 'relative', width: '45%', height: '45%' }}>
           <Doughnut data={chartData} />
           <div
             style={{
@@ -43,7 +43,7 @@ const TotalReward = ({ data }: { data: number[] }) => {
           </div>
         </div>
 
-        <div className="mt-4 flex flex-row items-start justify-center gap-[141px]">
+        <div className="mt-4 flex flex-row items-start justify-center gap-[141px] ">
           <div className="flex flex-col items-center justify-start gap-[10px]">
             <div className="flex flex-row items-center justify-start gap-[10px] text-left">
               <img className="relative rounded-3xs w-5 h-5" alt="" src={dotblue} />

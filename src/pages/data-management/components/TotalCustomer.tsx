@@ -20,12 +20,12 @@ const TotalCustomer = ({ data }: { data: number[] }) => {
     ],
   };
   return (
-    <div className="bg-lightGray shadow-lg w-[522px] h-[423px]">
+    <div className="bg-white shadow-lg w-[522px] h-[423px] rounded-xl">
       <div className="rounded-3xs   flex flex-col p-11 items-center justify-start ">
         <div className="flex flex-row items-start justify-start text-left">
           <div className="relative font-light inline-block w-[350px] shrink-0 text-black">จำนวนลูกค้าทั้งหมด</div>
         </div>
-        <div className='mt-4' style={{ position: 'relative', width: '45%', height: '45%' }}>
+        <div className="mt-4" style={{ position: 'relative', width: '45%', height: '45%' }}>
           <Doughnut data={chartData} />
           <div
             style={{
