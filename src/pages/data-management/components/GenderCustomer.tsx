@@ -23,20 +23,20 @@ const GenderCustomer: React.FC<GenderCustomerProps> = ({ genderCustomer }) => {
         <div className="w-[442px] flex flex-row items-start justify-between">
           <div className="flex flex-col items-center justify-start gap-[20px]">
             <div className="w-20 h-[203px] flex flex-row items-center justify-center">
-              <img className="relative w-[99px] h-[182px]" alt="" src={iconwoman} />
+              <img className="relative w-20 h-[182px]" alt="" src={iconwoman} />
             </div>
             <div className="flex flex-col items-center justify-start gap-[10px]">
               <div className="relative font-light text-black">หญิง</div>
-              <b className="relative text-5xl text-black">{women}%</b>
+              <b className="relative text-5xl text-black">{women.toLocaleString()}%</b>
             </div>
           </div>
           <div className="w-[78px] flex flex-col items-center justify-start gap-[20px]">
-            <div className="w-20 h-[203px] flex flex-row items-center justify-start">
+            <div className="w-20 h-[203px] flex flex-row items-center  justify-start">
               <img className="relative w-20 h-[182px]" alt="" src={iconman} />
             </div>
             <div className="flex flex-col items-center justify-start gap-[10px]">
               <div className="relative font-light text-black">ชาย</div>
-              <b className="relative text-5xl text-black">{Men}%</b>
+              <b className="relative text-5xl text-black">{Men.toLocaleString()}%</b>
             </div>
           </div>
           <div className="flex flex-col items-center justify-start gap-[20px]">
@@ -45,7 +45,7 @@ const GenderCustomer: React.FC<GenderCustomerProps> = ({ genderCustomer }) => {
             </div>
             <div className="flex flex-col items-center justify-start gap-[10px]">
               <div className="relative font-light text-black">ไม่ระบุเพศ</div>
-              <b className="relative text-5xl text-black">{unknown_gender}%</b>
+              <b className="relative text-5xl text-black">{unknown_gender.toLocaleString()}%</b>
             </div>
           </div>
         </div>

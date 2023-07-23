@@ -29,54 +29,60 @@ const MaximumReward: React.FC<MaximumRewardProps> = ({ reward }) => {
             5 อันดับ ของรางวัลที่มีการแลกมากที่สุด
           </div>
         </div>
-        <div className="flex flex-row items-start justify-center text-center text-p-white">
-          <div className="bg-p-d-gray h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-center">
-            <div className="relative text-black">อันดับ</div>
-          </div>
-          <div className="bg-p-d-gray w-[79.01px] h-[49.16px] flex flex-row p-[17.55818748474121px] box-border items-center justify-center">
-            <div className="relative text-black">รูปภาพ</div>
-          </div>
-          <div className="bg-p-d-gray w-[199.29px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-start">
-            <div className="relative text-black">ชื่อของรางวัล</div>
-          </div>
-          <div className="bg-p-d-gray w-[147.49px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-0 box-border items-center justify-start">
-            <div className="relative text-black">ประเภทของรางวัล</div>
-          </div>
-          <div className="bg-p-d-gray w-[63.21px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-0 box-border items-center justify-start">
-            <div className="relative text-black">หมวดหมู่</div>
-          </div>
-          <div className="bg-p-d-gray w-[105.35px] h-[49.16px] flex flex-row p-[17.55818748474121px] box-border items-center justify-end">
-            <div className="relative text-black">จำนวนลูกค้า</div>
-          </div>
-          <div className="bg-p-d-gray h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-end">
-            <div className="relative text-black">ยอดรวมการแลกของรางวัล</div>
-          </div>
-        </div>
-        {topRewards.map((reward, index) => (
-          <div className="flex flex-row items-start justify-center">
-            <div className="bg-p-white w-[106.23px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-center">
-              {index < 3 ? <img src={rankImg[index]} alt={`User ${index + 1}`} /> : <div>{index + 1}</div>}
-            </div>
-            <div className="bg-p-white w-[79.01px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-center">
-              <div className="relative rounded-[50%] bg-gainsboro w-[21.07px] h-[21.07px]" />
-            </div>
-            <div className="bg-p-white w-[199.29px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-start">
-              <div className="relative font-light text-black">{reward.reward}</div>
-            </div>
-            <div className="bg-p-white w-[147.49px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-0 box-border items-center justify-start">
-              <div className="relative font-light text-black">{reward.TypeReward}</div>
-            </div>
-            <div className="bg-p-white w-[63.21px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-0 box-border items-center justify-start">
-              <div className="relative font-light text-black">{reward.group}</div>
-            </div>
-            <div className="bg-p-white w-[105.35px] h-[49.16px] flex flex-row p-[17.55818748474121px] box-border items-center justify-end">
-              <div className="relative font-light text-black">{reward.TotalCustomer}</div>
-            </div>
-            <div className="bg-p-white w-[232.65px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-end">
-              <div className="relative font-light text-black">{reward.sum_Reward}</div>
-            </div>
-          </div>
-        ))}
+        <table className="w-full">
+        <thead>
+          <tr className="flex flex-row items-start justify-center text-center " style={{background:'#8190A0'}}>
+            <th className="bg-p-d-gray h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-center">
+              <div className="relative text-white">อันดับ</div>
+            </th>
+            <th className="bg-p-d-gray w-[79.01px] h-[49.16px] flex flex-row p-[17.55818748474121px] box-border items-center justify-center">
+              <div className="relative text-white">รูปภาพ</div>
+            </th>
+            <th className="bg-p-d-gray w-[199.29px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-start">
+              <div className="relative text-white">ชื่อของรางวัล</div>
+            </th>
+            <th className="bg-p-d-gray w-[147.49px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-0 box-border items-center justify-start">
+              <div className="relative text-white">ประเภทของรางวัล</div>
+            </th>
+            <th className="bg-p-d-gray w-[63.21px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-0 box-border items-center justify-start">
+              <div className="relative text-white">หมวดหมู่</div>
+            </th>
+            <th className="bg-p-d-gray w-[105.35px] h-[49.16px] flex flex-row p-[17.55818748474121px] box-border items-center justify-end">
+              <div className="relative text-white">จำนวนลูกค้า</div>
+            </th>
+            <th className="bg-p-d-gray h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-end">
+              <div className="relative text-white">ยอดรวมการแลกของรางวัล</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {topRewards.map((reward, index) => (
+            <tr className="flex flex-row items-start justify-center">
+              <td className="bg-p-white w-[106.23px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-center">
+                {index < 3 ? <img src={rankImg[index]} alt={`User ${index + 1}`} /> : <div className="text-black">{index + 1}</div>}
+              </td>
+              <td className="bg-p-white w-[79.01px] h-[49.16px] flex flex-row box-border items-center justify-center">
+                <img className="rounded-full object-cover w-full h-full" alt="" src={reward.img} />
+              </td>
+              <td className="bg-p-white w-[199.29px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-start">
+                <div className="relative font-light text-black">{reward.reward}</div>
+              </td>
+              <td className="bg-p-white w-[147.49px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-0 box-border items-center justify-start">
+                <div className="relative font-light text-black">{reward.TypeReward}</div>
+              </td>
+              <td className="bg-p-white w-[63.21px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-0 box-border items-center justify-start">
+                <div className="relative font-light text-black">{reward.group}</div>
+              </td>
+              <td className="bg-p-white w-[105.35px] h-[49.16px] flex flex-row p-[17.55818748474121px] box-border items-center justify-end">
+                <div className="relative font-light text-black">{reward.TotalCustomer.toLocaleString()}</div>
+              </td>
+              <td className="bg-p-white w-[232.65px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-end">
+                <div className="relative font-light text-black">{reward.sum_Reward.toLocaleString()}</div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+        </table>
       </div>
     </div>
   );

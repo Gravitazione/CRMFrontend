@@ -1,29 +1,61 @@
 {
     "TotalCustomerData": [8, 2],
     "maximumPointCustomer": [
-      {"name": "User 1", "img": "", "score": 100},
-      {"name": "User 2", "img": "", "score": 90},
-      {"name": "User 3", "img": "", "score": 110},
-      {"name": "User 4", "img": "", "score": 410}
+      {"name": "娃娃 (Wáwá)", "img": "https://yt3.googleusercontent.com/ytc/AOPolaQfz9wBmffk_CP1CzqQ5pTGNWWB1CRbOvh2-avl=s900-c-k-c0x00ffffff-no-rj", "score": 400},
+      {"name": "Hu tao", "img": "https://i0.wp.com/fragstrat.com/genshin-impact/wp-content/uploads/Hu_Tao_Thumb200.png?w=1170&ssl=1", "score": 90},
+      {"name": "Ayaka", "img": "https://i0.wp.com/fragstrat.com/genshin-impact/wp-content/uploads/Hu_Tao_Thumb200.png?w=1170&ssl=1", "score": 110},
+      {"name": "Arona", "img": "https://static.wikia.nocookie.net/blue-archive/images/e/e0/Arona_Icon.png/revision/latest/scale-to-width/360?cb=20210407053725", "score": 310}
     ],
     "pointCustomer": {"allScore": 16000000, "useScore": 10000000, "totalScore": 6000000},
     "genderCustomer": {"women": 30, "Men": 20, "unknown_gender": 50},
     "reward": [
       {
-        "reward": "Lorem ipsum",
+        "reward": "B737",
         "TypeReward": "Reward/Privilege",
-        "img": "",
-        "group": "Lorem",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjL52qled26uJnBSSQj_QmPINVE6DbDOjUnquKoATt1peu1sb0LiQ2A3kWiB3labG2Vm8&usqp=CAU",
+        "group": "เครื่องบิน",
         "TotalCustomer": 100,
-        "sum_Reward": 100
+        "sum_Reward": 300
+      },
+      {
+        "reward": "M1A2",
+        "TypeReward": "Reward/Privilege",
+        "img": "https://www.mpmhobbies.com/cdn/shop/products/343e5cca62f57f9886d342b283146dd3.jpg?v=1669073616",
+        "group": "รถถัง",
+        "TotalCustomer": 100,
+        "sum_Reward": 400
+      },
+      {
+        "reward": "B737",
+        "TypeReward": "Reward/Privilege",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjL52qled26uJnBSSQj_QmPINVE6DbDOjUnquKoATt1peu1sb0LiQ2A3kWiB3labG2Vm8&usqp=CAU",
+        "group": "เครื่องบิน",
+        "TotalCustomer": 100,
+        "sum_Reward": 20
+      },
+      {
+        "reward": "B737",
+        "TypeReward": "Reward/Privilege",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjL52qled26uJnBSSQj_QmPINVE6DbDOjUnquKoATt1peu1sb0LiQ2A3kWiB3labG2Vm8&usqp=CAU",
+        "group": "เครื่องบิน",
+        "TotalCustomer": 100,
+        "sum_Reward": 250
+      },
+      {
+        "reward": "B737",
+        "TypeReward": "Reward/Privilege",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjL52qled26uJnBSSQj_QmPINVE6DbDOjUnquKoATt1peu1sb0LiQ2A3kWiB3labG2Vm8&usqp=CAU",
+        "group": "เครื่องบิน",
+        "TotalCustomer": 100,
+        "sum_Reward": 250
       }
     ],
     "totalPointCustomer": {"total_Collectpoints": 30, "number_of_timesPoints": 20},
     "provinceCustomer": [
-      {"name": "User 1", "score": 100},
-      {"name": "User 1", "score": 100},
-      {"name": "User 1", "score": 100},
-      {"name": "User 1", "score": 100},
-      {"name": "User 1", "score": 100}
+      {"name": "สงขลา", "score": 300},
+      {"name": "กระบี่", "score": 200},
+      {"name": "กรุงเทพมหานคร", "score": 500},
+      {"name": "ยะลา", "score": 30},
+      {"name": "เชียงใหม่", "score": 250}
     ]
   }

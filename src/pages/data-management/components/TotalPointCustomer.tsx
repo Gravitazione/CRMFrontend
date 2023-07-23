@@ -1,4 +1,5 @@
 import React from 'react';
+import lineVerticalblack from '../../../assets/icons/lineVertical-black.svg';
 
 interface TotalPointCustomerProps {
   totalPointCustomer: {
@@ -13,17 +14,21 @@ const TotalPointCustomer: React.FC<TotalPointCustomerProps> = ({ totalPointCusto
     <div className=" w-[1064px] h-[204px] bg-lightGray shadow-lg">
       <div className=" flex flex-row p-10 items-start justify-start gap-[10px]">
         <div className="w-[482px] flex flex-col items-center justify-start gap-[20px]">
-          <div className="relative font-light inline-block w-[482px] text-black">จำนวนลูกค้าที่สะสมคะแนน</div>
+          <div className="text-left font-light w-[482px] text-black">จำนวนลูกค้าที่สะสมคะแนน</div>
           <div className="flex flex-col items-center justify-start gap-[10px] text-5xl">
-            <b className="relative text-black">{total_Collectpoints}</b>
+            <b className="relative text-black">{total_Collectpoints.toLocaleString()}</b>
             <div className="relative text-lg font-light text-black">คน</div>
           </div>
         </div>
-        <img className="relative w-px h-[120.5px]" alt="" src="/line-4.svg" />
+        <img
+                className="relative w-[0.88px] h-[105.79px]"
+                alt=""
+                src={lineVerticalblack}
+              />
         <div className="w-[482px] flex flex-col items-center justify-start gap-[20px]">
-          <div className="relative font-light inline-block w-[480px] text-black">จำนวนครั้งที่สะสมคะแนน</div>
+          <div className="text-left font-light w-[482px] text-black">จำนวนครั้งที่สะสมคะแนน</div>
           <div className="flex flex-col items-center justify-start gap-[10px] text-5xl">
-            <b className="relative text-black">{number_of_timesPoints}</b>
+            <b className="relative text-black">{number_of_timesPoints.toLocaleString()}</b>
             <div className="relative text-lg font-light text-black">ครั้ง</div>
           </div>
         </div>

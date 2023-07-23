@@ -20,58 +20,44 @@ const ProvinceCustomer = ({ provinceCustomer }: Props) => {
 
   return (
     <div className="bg-lightGray shadow-lg w-[522px] h-[423px]">
-      {/* <table>
-    <thead>
-      <tr>
-        <th>อันดับ</th>
-        <th>รูปภาพ</th>
-        <th>ชื่อ-สกุล</th>
-        <th>คะแนน</th>
-      </tr>
-    </thead>
-    <tbody>
-      {topUsers.map((user, index) => (
-        <tr key={index}>
-          <td>{index + 1}</td>
-          <td><img src={`path_to_images/image${index + 1}.jpg`}  /></td>
-          <td>{user.name}</td>
-          <td>{user.score}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table> */}
-
       <div className=" flex flex-col items-start justify-start text-center text-[14.05px]">
         <div className="rounded-t-[8.78px] rounded-b-none flex flex-row pt-[35.11637496948242px] px-[35.11637496948242px] pb-[17.55818748474121px] items-start justify-start text-left text-base-8">
           <div className="relative font-light inline-block w-[388.04px] shrink-0 text-black">
             5 อันดับ จังหวัดที่มีจำนวนลูกค้ามากที่สุด
           </div>
         </div>
-        <div className="flex flex-row items-start justify-center text-p-white">
-          <div className="bg-p-d-gray h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-center">
-            <div className="relative text-black">อันดับ</div>
-          </div>
-          <div className="bg-p-d-gray w-[222.11px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-start">
-            <div className="relative text-black">จังหวัด</div>
-          </div>
-          <div className="bg-p-d-gray w-[129.93px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-end">
-            <div className="relative text-black">จำนวนลูกค้า</div>
-          </div>
-        </div>
+        <table className="w-full">
+<thead>
+        <tr className="flex flex-row items-start justify-center " style={{background:'#8190A0'}}>
+          <th  className="bg-p-d-gray h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-center">
+            <div className="relative text-white">อันดับ</div>
+          </th >
+          <th  className="bg-p-d-gray w-[222.11px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-start">
+            <div className="relative text-white">จังหวัด</div>
+          </th >
+          <th  className="bg-p-d-gray w-[129.93px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-end">
+            <div className="relative text-white">จำนวนลูกค้า</div>
+          </th >
+        </tr>
+        </thead>
+        <tbody>
         {topProvince.map((province, index) => (
-          <div className="flex flex-row items-start justify-center">
-            <div className="bg-p-white w-[106.23px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-center text-black">
+          <tr  className="flex flex-row items-start justify-center">
+            <td  className="bg-p-white w-[106.23px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-center text-black">
               {index < 3 ? <img src={rankImg[index]} alt={`User ${index + 1}`} /> : <div>{index + 1}</div>}
-            </div>
-            <div className="bg-p-white w-[222.11px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-start">
+            </td >
+            <td  className="bg-p-white w-[222.11px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-start">
               <div className="relative font-light text-black">{province.name}</div>
-            </div>
-            <div className="bg-p-white w-[129.93px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-end">
-              <div className="relative font-light text-black">{province.score}</div>
-            </div>
-          </div>
+            </td >
+            <td  className="bg-p-white w-[129.93px] h-[49.16px] flex flex-row py-[17.55818748474121px] px-[35.11637496948242px] box-border items-center justify-end">
+              <div className="relative font-light text-black">{province.score.toLocaleString()}</div>
+            </td>
+          </tr >
         ))}
+        </tbody>
+          </table>
       </div>
+    
     </div>
   );
 };
