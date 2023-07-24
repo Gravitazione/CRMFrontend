@@ -1,26 +1,19 @@
 import React from 'react';
-import lineVerticalblack from '../../../assets/icons/lineVertical-black.svg';
-
-interface TotalPointCustomerProps {
-  totalPointCustomer: {
-    total_Collectpoints: number;
-    number_of_timesPoints: number;
-  };
-}
+import { TotalPointCustomerProps } from '../../../constant/model/interfaces/components/TotalPointCustomer.interfaces'
 
 const TotalPointCustomer: React.FC<TotalPointCustomerProps> = ({ totalPointCustomer }) => {
   const { total_Collectpoints, number_of_timesPoints } = totalPointCustomer;
   return (
     <div className=" w-[1064px] h-[204px] bg-white shadow-lg rounded-xl">
-      <div className=" flex flex-row p-10 items-start justify-start gap-[10px]">
-        <div className="w-[482px] flex flex-col items-center justify-start gap-[20px]">
-          <div className="text-left font-light w-[482px] text-black">จำนวนลูกค้าที่สะสมคะแนน</div>
-          <div className="flex flex-col items-center justify-start gap-[10px] text-5xl">
-            <b className="relative text-black">{total_Collectpoints.toLocaleString()}</b>
-            <div className="relative text-lg font-light text-black">คน</div>
+      <div className="flex w-full p-10 text-black">
+        <div className="w-[482px] flex flex-col items-center gap-5">
+          <div className="text-left font-light w-full">จำนวนลูกค้าที่สะสมคะแนน</div>
+          <div className="flex flex-col items-center gap-2.5 text-2xl">
+            <b className="font-bold">{total_Collectpoints.toLocaleString()}</b>
+            <div className="text-lg font-light">คน</div>
           </div>
         </div>
-        <img className="relative w-[0.88px] h-[105.79px]" alt="" src={lineVerticalblack} />
+        <div className="divider divider-horizontal"></div>
         <div className="w-[482px] flex flex-col items-center justify-start gap-[20px]">
           <div className="text-left font-light w-[482px] text-black">จำนวนครั้งที่สะสมคะแนน</div>
           <div className="flex flex-col items-center justify-start gap-[10px] text-5xl">
